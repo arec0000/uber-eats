@@ -50,3 +50,30 @@
     border-bottom: 1px solid var(--gray-100);
   }
 }
+
+.deliveryInfo {
+  display: flex;
+  gap: 16px;
+  padding-top: 24px;
+
+  @media (width >= 768px) {
+    display: none;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &:last-child {
+      flex-grow: 1;
+    }
+  }
+
+  &__text {
+    color: var(--txt-color-secondary);
+    font-size: .6875rem;
+    font-family: var(--font-main);
+    line-height: .8125rem;
+  }
+}

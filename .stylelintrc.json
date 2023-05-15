@@ -5,5 +5,8 @@
   ],
   "plugins": [
     "stylelint-scss"
-  ]
+  ],
+  "rules": {
+    "selector-class-pattern": "\\w+"
+  }
 }
