@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <a class="toTop" href="#" tabindex="-1">
+    <img src="./images/arrow.svg" alt="to top">
+  </a>
+
   <header class="header">
     <div class="header__container">
       <img class="header__logo" src="./images/logo.svg" alt="logo">
@@ -234,12 +238,58 @@
     </div>
   </main>
 
-  <footer>
-
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="./images/white-logo.svg" alt="logo">
+      <div class="footer__info">
+        <div>
+          <button class="footer__language">
+            ENGLISH
+          </button>
+          <span class="footer__hashtag">
+            <span class="footer__hashSymbol">#</span>
+            <span>UberEats</span>
+          </span>
+          <div class="footer__socialNetworks">
+            <img src="./images/facebook.svg" alt="facebook">
+            <img src="./images/twitter.svg" alt="twitter">
+            <img src="./images/instagram.svg" alt="instagram">
+          </div>
+        </div>
+        <div class="footer__links">
+          <a class="footer__link" href="#">About UberEats</a>
+          <a class="footer__link" href="#">Become a Delivery Partner</a>
+          <a class="footer__link" href="#">Become a Restaurant Partner</a>
+        </div>
+        <div class="footer__links">
+          <a class="footer__link" href="#">See all cities</a>
+          <a class="footer__link" href="#">Pricing</a>
+          <a class="footer__link" href="#">Help</a>
+          <a class="footer__link" href="#">FAQs</a>
+        </div>
+      </div>
+      <div class="footer__applications">
+        <a class="footer__storeLink" href="#">
+          <picture>
+            <source srcset="./images/appStore.avif">
+            <source srcset="./images/appStore.webp">
+            <img src="./images/appStore.png" alt="app store">
+          </picture>
+        </a>
+        <a class="footer__storeLink" href="#">
+          <picture>
+            <source srcset="./images/gPlay.avif">
+            <source srcset="./images/gPlay.webp">
+            <img src="./images/gPlay.png" alt="google play">
+          </picture>
+        </a>
+      </div>
+      <div class="footer__privacy">
+        <a class="footer__link" href="#">© 2017 Uber Technologies Inc.</a>
+        <a class="footer__link" href="#">Privacy</a>
+        <a class="footer__link" href="#">Terms</a>
+      </div>
+    </div>
   </footer>
-
-  <a class="toTop" href="#" tabindex="-1">
-    <img src="./images/row.svg" alt="to top">
-  </a>
 </body>
 </html>

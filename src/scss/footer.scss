@@ -1,0 +1,128 @@
+.footer {
+  background-color: var(--black-010);
+
+  &__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 56px 8px 40px;
+
+    @media (width >= 1124px) {
+      padding: 56px 0 40px;
+    }
+  }
+
+  &__info {
+    margin-top: 40px;
+    padding: 32px 0 40px;
+    border-top: 1px solid #7D7D7D;
+    border-bottom: 1px solid #7D7D7D;
+
+    @media (width >= 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 48px;
+    }
+  }
+
+  &__language {
+    padding: 12px 71px 12px 48px;
+    color: #fff;
+    font-size: .8125rem;
+    font-family: var(--font-main);
+    line-height: .9375rem;
+    background-color: var(--gray-200);
+    background-image: url('../images/world.svg'), url('../images/chevron.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 16px center, calc(100% - 15px) center;
+    border: none;
+    border-radius: var(--radius-main);
+  }
+
+  &__hashtag {
+    display: flex;
+    gap: 1px;
+    margin-top: 32px;
+    color: var(--txt-color-white);
+    font-family: var(--font-main);
+    line-height: 1.17rem;
+  }
+
+  &__hashSymbol {
+    color: var(--green-050);
+    line-height: 1.1875rem;
+  }
+
+  &__socialNetworks {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    color: var(--txt-color-white);
+    font-size: .8125rem;
+    font-family: var(--font-main);
+    line-height: .9375rem;
+    text-decoration: none;
+
+    @media (width >= 768px) {
+      transition: color .3s;
+
+      &:hover {
+        color: var(--green-050);
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 42px;
+
+    &:last-child {
+      margin-top: 23px;
+    }
+
+    @media (width >= 768px) {
+      &, &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__applications {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #7D7D7D;
+
+    @media (width >= 768px) {
+      padding: 40px 0;
+    }
+  }
+
+  &__storeLink {
+    img {
+      height: 36px;
+
+      @media (width >= 768px) {
+        height: 40px;
+      }
+    }
+  }
+
+  &__privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+
+    @media (width >= 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+  }
+}
