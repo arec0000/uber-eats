@@ -1,0 +1,48 @@
+.card {
+  text-decoration: none;
+  cursor: pointer;
+
+  &__thumbnail {
+    position: relative;
+    height: 246px;
+
+    @media (width >= 768px) {
+      height: 256px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    display: block;
+    overflow: hidden;
+    color: var(--txt-color);
+    font-family: var(--font-main);
+    line-height: 1.3125rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__title {
+    margin-top: 16px;
+    line-height: 1.5rem;
+  }
+
+  &__tags {
+    margin-top: 4px;
+    color: var(--txt-color-secondary);
+    font-size: .875rem;
+  }
+
+  &__time {
+    margin-top: 4px;
+    font-size: .8125rem;
+  }
+}

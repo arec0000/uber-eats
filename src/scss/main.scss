@@ -77,3 +77,31 @@
     line-height: .8125rem;
   }
 }
+
+.catalog {
+  padding-top: 40px;
+
+  &__header {
+    color: var(--txt-color);
+    font-size: 1.375rem;
+    font-family: var(--font-main);
+    line-height: 2.125rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 16px;
+
+    @media (width >= 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 16px;
+    }
+
+    @media (width >= 1124px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
