@@ -9,6 +9,8 @@ import dartSass from 'sass';
 import gulpScss from 'gulp-sass';
 import autoPrefixer from 'gulp-autoprefixer';
 
+import htmlmin from 'gulp-htmlmin';
+
 import avif from 'gulp-avif';
 import webp from 'gulp-webp';
 import imagemin from 'gulp-imagemin';
@@ -27,7 +29,11 @@ const cleanDist = () => {
   return Promise.resolve();
 }
 
-const html = () => src(['src/**/*.html'], { base: 'src' }).pipe(dest('dist'));
+const html = () => (
+  src('src/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest('dist'))
+)
 
 const styles = () => (
   src('src/scss/style.scss')
@@ -71,7 +77,7 @@ const watching = () => {
     server: { baseDir: 'dist/' }
   });
 
-  watch(['src/*.html']).on('change', browserSync.reload);
+  watch(['src/*.html'], html).on('change', browserSync.reload);
   watch(['src/images'], images);
   watch(['src/scss/*.scss'], styles);
   watch(['src/fonts/**/'], fonts);
