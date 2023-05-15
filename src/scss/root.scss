@@ -1,0 +1,25 @@
+:root {
+  // цвета
+  --white-005: #F2F2F2;
+  --gray-100: #757575;
+  --gray-200: #3B3B3B;
+  --black-010: #262626;
+  --green-050: #59BD5A;
+
+  // цвета текста
+  --txt-color: #1D1D1D;
+  --txt-color-secondary: #626262;
+  --txt-color-white: #fff;
+
+  // шрифты
+  --font-main: roboto, sans-serif;
+
+  // границы
+  --border-main: 1px solid #E0E0E0;
+
+  // скругления
+  --radius-main: 2px;
+
+  // тени
+  --shadow-down: 0px 0px 16px rgb(38 38 38 / 16%);
+}
