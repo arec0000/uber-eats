@@ -79,7 +79,11 @@
 }
 
 .catalog {
-  padding-top: 40px;
+  padding: 40px 0 68px;
+
+  @media (width >= 1124px) {
+    padding-bottom: 100px;
+  }
 
   &__header {
     color: var(--txt-color);

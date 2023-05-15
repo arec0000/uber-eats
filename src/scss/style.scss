@@ -2,12 +2,14 @@
 @import './fonts';
 @import './root';
 @import './header';
+@import './toTop';
 @import './main';
 @import './button';
 @import './card';
 
 html {
   background-color: var(--white-005);
+  scroll-behavior: smooth;
 }
 
 *:focus-visible {
