@@ -1,1 +1,8 @@
+@import './reset';
+@import './fonts';
+@import './root';
+@import './header';
 
+html {
+  background-color: var(--white-005);
+}
